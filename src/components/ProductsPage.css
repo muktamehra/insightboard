@@ -1,0 +1,36 @@
+.products-page {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.products-header h3 {
+  font-size: 16px;
+  color: #1e2a3a;
+  font-weight: 600;
+}
+
+.stock {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stock.ok {
+  background-color: #c6f6d5;
+  color: #276749;
+}
+
+.stock.low {
+  background-color: #fed7d7;
+  color: #822727;
+}

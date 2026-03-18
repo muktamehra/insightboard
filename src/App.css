@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.stats-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}

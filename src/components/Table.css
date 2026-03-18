@@ -1,0 +1,75 @@
+.table-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.table-card h3 {
+  font-size: 16px;
+  color: #1e2a3a;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.table-search {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  width: 220px;
+}
+
+.table-search:focus {
+  border-color: #1e2a3a;
+}
+
+.table th {
+  text-align: left;
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #718096;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #1e2a3a;
+  border-bottom: 1px solid #f4f6f9;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.completed {
+  background-color: #c6f6d5;
+  color: #276749;
+}
+
+.status.pending {
+  background-color: #fefcbf;
+  color: #744210;
+}
+
+.status.cancelled {
+  background-color: #fed7d7;
+  color: #822727;
+}
