@@ -1,16 +1,98 @@
-# React + Vite
+# 📊 InsightBoard — Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern admin analytics dashboard built with React, featuring data visualization, dark mode, and multi-page navigation.
+Designed to simulate a real-world admin panel with data insights and management features.
 
-Currently, two official plugins are available:
+🔗 ## 🌐 Live Demo
+https://insightboard-seven.vercel.app
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- 📊 **Dashboard** — stat cards, line chart, bar chart, and recent transactions
+- 📊 **Data Visualization** — interactive charts using Recharts
+- 👤 **Users Page** — searchable users table with role and status indicators
+- 📦 **Products Page** — searchable products table with low stock alerts
+- 🛒 **Orders Page** — searchable orders table with status badges
+- 🌙 **Dark Mode** — toggle with localStorage persistence
+- ⏳ **Loading Spinner** — smooth loading state on app start
+- 🔍 **Search** — filter data on every page
+- 📅 **Dynamic Date** — always shows today's date
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** — component-based UI
+- **Vite** — fast build tool and dev server
+- **Recharts** — line and bar charts
+- **CSS** — custom styling, no UI libraries
+- **localStorage** — dark mode persistence
+- **Vercel** — deployment and hosting
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js installed
+
+### Installation
+```bash
+git clone https://github.com/muktamehra/insightboard.git
+cd insightboard
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+---
+
+## Project Structure
+```
+src/
+├── components/
+│   ├── Sidebar.jsx        # Navigation sidebar
+│   ├── Header.jsx         # Header with dark mode toggle
+│   ├── StatCard.jsx       # Summary stat cards
+│   ├── Chart.jsx          # Line and bar charts
+│   ├── Table.jsx          # Transactions table
+│   ├── UsersPage.jsx      # Users management page
+│   ├── ProductsPage.jsx   # Products management page
+│   └── OrdersPage.jsx     # Orders management page
+├── App.jsx                # Main app logic and routing
+├── App.css                # Global styles and dark mode
+└── index.css              # CSS reset
+```
+
+---
+
+## React Concepts Used
+
+| Concept | Where Used |
+|---|---|
+| `useState` | Active page, dark mode, loading, search |
+| `useEffect` | localStorage persistence, loading timer |
+| Props | Passing state between components |
+| Conditional Rendering | Page switching, loading state |
+| Array Methods | `filter`, `map` for search and lists |
+
+---
+
+## Deployment
+
+Deployed on Vercel with automatic deployments on every push to `main`.
+
+---
+
+## Author
+
+**Mukta Mehra**
+[GitHub](https://github.com/muktamehra)
+
+---
+
+## License
+
+This project is open source and available under the MIT License.
