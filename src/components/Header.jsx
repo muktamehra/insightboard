@@ -1,6 +1,6 @@
 import './Header.css'
 
-function Header({ activePage }) {
+function Header({ activePage, darkMode, setDarkMode }) {
     const titles = {
     dashboard: 'Dashboard',
     users: 'Users',
@@ -16,6 +16,9 @@ function Header({ activePage }) {
       </div>
       <div className="header-right">
         <span className="header-date">March 17, 2026</span>
+        <button type="button" className="dark-toggle" onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? '☀️' : '🌙'}
+        </button>
         <div className="header-avatar">M</div>
       </div>
     </div>

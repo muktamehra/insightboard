@@ -42,3 +42,16 @@
   font-weight: bold;
   font-size: 16px;
 }
+
+.dark-toggle {
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dark-toggle:hover {
+  background-color: #f4f6f9;
+}

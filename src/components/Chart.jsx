@@ -30,7 +30,7 @@ function Chart() {
             <XAxis dataKey="month" />
             <YAxis />
             <Tooltip />
-            <Line type="monotone" dataKey="sales" stroke="#1e2a3a" strokeWidth={2} />
+            <Line type="monotone" dataKey="sales" stroke="#4a9eff" strokeWidth={2} />
           </LineChart>
         </ResponsiveContainer>
       </div>
@@ -43,7 +43,7 @@ function Chart() {
             <XAxis dataKey="category" />
             <YAxis />
             <Tooltip />
-            <Bar dataKey="value" fill="#1e2a3a" />
+            <Bar dataKey="value" fill="#4a9eff" />
           </BarChart>
         </ResponsiveContainer>
       </div>

@@ -11,12 +11,13 @@ import OrdersPage from './components/OrdersPage'
 
 function App() {
   const [activePage, setActivePage] = useState('dashboard')
+  const [darkMode, setDarkMode] = useState(false)
 
   return (
-    <div className="app-layout">
+    <div className={`app-layout ${darkMode ? 'dark' : ''}`}>
       <Sidebar activePage={activePage} setActivePage={setActivePage} />
       <div className="main-content">
-        <Header activePage={activePage} />
+        <Header activePage={activePage} darkMode={darkMode} setDarkMode={setDarkMode} />
         {activePage === 'dashboard' && (
           <>
             <div className="stats-row">

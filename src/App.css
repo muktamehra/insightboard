@@ -23,3 +23,66 @@
   margin-bottom: 24px;
   flex-wrap: wrap;
 }
+
+.dark {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+.dark .main-content {
+  background-color: #0f172a;
+}
+
+.dark .stat-card,
+.dark .chart-card,
+.dark .table-card,
+.dark .users-page,
+.dark .products-page,
+.dark .orders-page {
+  background-color: #1e2a3a;
+  color: #ffffff;
+}
+
+.dark .stat-title,
+.dark .header-left p,
+.dark .header-date {
+  color: #a0aec0;
+}
+
+.dark .stat-value,
+.dark .header-left h1 {
+  color: #ffffff;
+}
+
+.dark .table th {
+  color: #a0aec0;
+  border-bottom: 1px solid #2d3f55;
+}
+
+.dark .table td {
+  color: #ffffff;
+  border-bottom: 1px solid #2d3f55;
+}
+
+.dark .header {
+  border-bottom: 1px solid #2d3f55;
+}
+
+.dark .table-search {
+  background-color: #2d3f55;
+  border-color: #2d3f55;
+  color: #ffffff;
+}
+
+.dark .chart-card h3 {
+  color: #ffffff;
+}
+
+.dark .recharts-text {
+  fill: #a0aec0;
+}
+
+.dark .recharts-cartesian-grid-horizontal line,
+.dark .recharts-cartesian-grid-vertical line {
+  stroke: #2d3f55;
+}
