@@ -11,13 +11,11 @@ import './App.css'
 
 function App() {
   const [activePage, setActivePage] = useState('dashboard')
-  const [darkMode, setDarkMode] = useState(false)
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
+  const [darkMode, setDarkMode] = useState(() => {
   const saved = localStorage.getItem('darkMode')
-  if (saved) setDarkMode(JSON.parse(saved))
-}, [])
+  return saved ? JSON.parse(saved) : false
+})
+  const [loading, setLoading] = useState(true)
 
 useEffect(() => {
   localStorage.setItem('darkMode', JSON.stringify(darkMode))
