@@ -15,7 +15,7 @@ function Header({ activePage, darkMode, setDarkMode }) {
         <p>Welcome back, Mukta 👋</p>
       </div>
       <div className="header-right">
-        <span className="header-date">March 17, 2026</span>
+        <span className="header-date">{new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
         <button type="button" className="dark-toggle" onClick={() => setDarkMode(!darkMode)}>
         {darkMode ? '☀️' : '🌙'}
         </button>

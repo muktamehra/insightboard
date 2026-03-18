@@ -4,7 +4,7 @@ import StatCard from './components/StatCard'
 import Chart from './components/Chart'
 import Table from './components/Table'
 import './App.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import UsersPage from './components/UsersPage'
 import ProductsPage from './components/ProductsPage'
 import OrdersPage from './components/OrdersPage'
@@ -13,11 +13,20 @@ function App() {
   const [activePage, setActivePage] = useState('dashboard')
   const [darkMode, setDarkMode] = useState(false)
 
+  useEffect(() => {
+  const saved = localStorage.getItem('darkMode')
+  if (saved) setDarkMode(JSON.parse(saved))
+}, [])
+
+useEffect(() => {
+  localStorage.setItem('darkMode', JSON.stringify(darkMode))
+}, [darkMode])
+
   return (
     <div className={`app-layout ${darkMode ? 'dark' : ''}`}>
       <Sidebar activePage={activePage} setActivePage={setActivePage} />
       <div className="main-content">
-        <Header activePage={activePage} darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Header activePage={activePage} />
         {activePage === 'dashboard' && (
           <>
             <div className="stats-row">
