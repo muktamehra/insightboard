@@ -1,0 +1,19 @@
+.orders-page {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.orders-header h3 {
+  font-size: 16px;
+  color: #1e2a3a;
+  font-weight: 600;
+}

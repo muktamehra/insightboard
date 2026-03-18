@@ -7,6 +7,7 @@ import './App.css'
 import { useState } from 'react'
 import UsersPage from './components/UsersPage'
 import ProductsPage from './components/ProductsPage'
+import OrdersPage from './components/OrdersPage'
 
 function App() {
   const [activePage, setActivePage] = useState('dashboard')
@@ -30,7 +31,7 @@ function App() {
         )}
         {activePage === 'users' && <UsersPage />}
         {activePage === 'products' && <ProductsPage />}
-        {activePage === 'orders' && <p>Orders page coming soon...</p>}
+        {activePage === 'orders' && <OrdersPage />}
       </div>
     </div>
   )
